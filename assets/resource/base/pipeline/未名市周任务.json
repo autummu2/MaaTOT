@@ -132,6 +132,8 @@
             "[JumpBack]Flag_高价纪念品",
             "[JumpBack]Flag_帮忙送餐1",
             "[JumpBack]Flag_帮忙送餐2",
+            "[JumpBack]Flag_饮品派送1",
+            "[JumpBack]Flag_饮品派送2",
             "[JumpBack]Flag_劝说游客"
         ]
     },
@@ -148,6 +150,166 @@
         ],
         "next": [
             "返回主界面"
+        ]
+    },
+    "Flag_饮品派送2": {
+        "recognition": "OCR",
+        "expected": [
+            "饮品派送（二",
+            "饮品派送\\(二"
+        ],
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Flag_和印大厅_饮品派送2",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_和印大厅"
+        ]
+    },
+    "Flag_和印大厅_饮品派送2": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/和印大厅定位图.png",
+        "roi": [
+            264,
+            232,
+            281,
+            261
+        ],
+        "threshold": 0.9,
+        "next": [
+            "Swipe_饮品派送2_1"
+        ]
+    },
+    "Swipe_饮品派送2_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/和印大厅定位图.png",
+        "roi": [
+            264,
+            232,
+            281,
+            261
+        ],
+        "threshold": 0.9,
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 2000,
+        "next": [
+            "Swipe_饮品派送2_2"
+        ]
+    },
+    "Swipe_饮品派送2_2": {
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 2000,
+        "next": [
+            "[JumpBack]Click_对话框标识",
+            "Click_关闭未名市奖励弹窗"
+        ]
+    },
+    "Flag_饮品派送1": {
+        "recognition": "OCR",
+        "expected": [
+            "饮品派送（一",
+            "饮品派送\\(一"
+        ],
+        "roi": [
+            0,
+            158,
+            720,
+            637
+        ],
+        "next": [
+            "Flag_和印休闲区_饮品派送1",
+            "[JumpBack]Flag_退出未名市任务",
+            "[JumpBack]Flag_重置位置_和印休闲区"
+        ]
+    },
+    "Flag_和印休闲区_饮品派送1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/和印休闲区定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            423,
+            537,
+            235,
+            347
+        ],
+        "next": [
+            "Swipe_饮品派送1_1"
+        ]
+    },
+    "Swipe_饮品派送1_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/和印休闲区定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            423,
+            537,
+            235,
+            347
+        ],
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 300,
+        "next": [
+            "Swipe_饮品派送1_2"
+        ]
+    },
+    "Swipe_饮品派送1_2": {
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 500,
+        "next": [
+            "[JumpBack]Click_对话框标识",
+            "Click_未名市任务"
         ]
     },
     "Flag_潮流青年": {
