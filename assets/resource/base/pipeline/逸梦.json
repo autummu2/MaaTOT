@@ -91,6 +91,7 @@
         "next": [
             "Click_加入花露",
             "Click_前往梦笺",
+            "[JumpBack]Click_关闭奖励弹窗",
             "Swipe_收取花露第二行"
         ]
     },
@@ -123,6 +124,7 @@
         "next": [
             "Click_加入花露",
             "Click_前往梦笺",
+            "[JumpBack]Click_关闭奖励弹窗",
             "Swipe_收取花露第三行"
         ]
     },
@@ -155,6 +157,7 @@
         "next": [
             "Click_加入花露",
             "Click_前往梦笺",
+            "[JumpBack]Click_关闭奖励弹窗",
             "Swipe_收取花露第四行"
         ]
     },
@@ -187,6 +190,7 @@
         "next": [
             "Click_加入花露",
             "Click_前往梦笺",
+            "[JumpBack]Click_关闭奖励弹窗",
             "Swipe_收取花露第五行"
         ]
     },
@@ -219,6 +223,7 @@
         "next": [
             "Click_加入花露",
             "Click_前往梦笺",
+            "[JumpBack]Click_关闭奖励弹窗",
             "Swipe_收取花露第六行"
         ]
     },
@@ -251,6 +256,7 @@
         "next": [
             "Click_加入花露",
             "Click_前往梦笺",
+            "[JumpBack]Click_关闭奖励弹窗",
             "Swipe_收取花露第七行"
         ]
     },
@@ -283,6 +289,7 @@
         "next": [
             "Click_加入花露",
             "Click_前往梦笺",
+            "[JumpBack]Click_关闭奖励弹窗",
             "Click_收取捕梦左上"
         ]
     },
@@ -340,6 +347,7 @@
             80
         ],
         "next": [
+            "[JumpBack]Click_关闭奖励弹窗",
             "Click_收取捕梦右上"
         ]
     },
@@ -363,6 +371,7 @@
             80
         ],
         "next": [
+            "[JumpBack]Click_关闭奖励弹窗",
             "Click_收取捕梦右下"
         ]
     },

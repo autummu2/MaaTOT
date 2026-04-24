@@ -1,4 +1,76 @@
 {
+    "Flag_重置位置_和印休闲区": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Flag_和印休闲区初始位置",
+            "[JumpBack]Swipe_和印大厅_和印休闲区_1",
+            "[JumpBack]Flag_重置位置_和印大厅",
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
+    "Flag_和印休闲区初始位置": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/和印休闲区定位图.png",
+        "threshold": 0.9,
+        "roi": [
+            423,
+            537,
+            235,
+            347
+        ]
+    },
+    "Swipe_和印大厅_和印休闲区_1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/和印大厅定位图.png",
+        "roi": [
+            264,
+            232,
+            281,
+            261
+        ],
+        "threshold": 0.9,
+        "pre_wait_freezes": 2000,
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 900,
+        "next": [
+            "Swipe_和印大厅_和印休闲区_2"
+        ]
+    },
+    "Swipe_和印大厅_和印休闲区_2": {
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 2000
+    },
     "Flag_重置位置_和印产品体验区": {
         "recognition": "TemplateMatch",
         "template": "未名市/未名市移动.png",
@@ -615,7 +687,7 @@
         ],
         "post_wait_freezes": 1000,
         "next": [
-            "Flag_忒弥斯律所二楼初始位置",         
+            "Flag_忒弥斯律所二楼初始位置",
             "Click_前往二楼办公区_忒弥斯律所二楼"
         ]
     },
