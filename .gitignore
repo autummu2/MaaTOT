@@ -461,4 +461,5 @@ GitReference.txt
 assets/resource/model
 .nicegui
 .venv
+.roo/
 
