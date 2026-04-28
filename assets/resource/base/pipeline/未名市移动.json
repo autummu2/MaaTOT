@@ -1,4 +1,96 @@
 {
+    "Flag_重置位置_忒弥斯律所一楼": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/未名市移动.png",
+        "roi": [
+            591,
+            255,
+            129,
+            126
+        ],
+        "next": [
+            "Flag_忒弥斯律所一楼初始位置",
+            "[JumpBack]Swipe_忒弥斯律所前台_忒弥斯律所一楼1",
+            "[JumpBack]Flag_重置位置_忒弥斯律所前台",
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
+    "Flag_忒弥斯律所一楼初始位置": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/忒弥斯律所一楼定位图.png",
+        "threshold": 0.9,
+        "pre_wait_freezes": 1000,
+        "roi": [
+            291,
+            790,
+            236,
+            242
+        ]
+    },
+    "Swipe_忒弥斯律所前台_忒弥斯律所一楼1": {
+        "recognition": "TemplateMatch",
+        "template": "未名市/忒弥斯律所前台定位图.png",
+        "roi": [
+            0,
+            728,
+            262,
+            362
+        ],
+        "threshold": 0.9,
+        "action": "Swipe",
+        "begin": [
+            550,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end_hold": 1000,
+        "next": [
+            "Swipe_忒弥斯律所前台_忒弥斯律所一楼2"
+        ]
+    },
+    "Swipe_忒弥斯律所前台_忒弥斯律所一楼2": {
+        "action": "Swipe",
+        "begin": [
+            350,
+            850,
+            20,
+            20
+        ],
+        "end": [
+            350,
+            650,
+            20,
+            20
+        ],
+        "end_hold": 1500,
+        "next": [
+            "Click_前往一楼办公区_忒弥斯律所一楼"
+        ]
+    },
+    "Click_前往一楼办公区_忒弥斯律所一楼": {
+        "recognition": "OCR",
+        "action": "Click",
+        "expected": "一楼办公区",
+        "roi": [
+            101,
+            449,
+            517,
+            328
+        ],
+        "pre_wait_freezes": 500,
+        "next": [
+            "Flag_忒弥斯律所一楼初始位置",
+            "Click_前往一楼办公区_忒弥斯律所一楼",
+            "[JumpBack]Flag_TipsLoading"
+        ]
+    },
     "Flag_重置位置_和印休闲区": {
         "recognition": "TemplateMatch",
         "template": "未名市/未名市移动.png",
